@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Advocate } from "@/db/schema";
 import {
   ColumnDef,
@@ -26,6 +26,10 @@ const AdvocatesSearch = () => {
     pageSize,
     search,
   });
+
+  useEffect(() => {
+    setPage(1);
+  }, [search]);
 
   const columns: ColumnDef<Advocate>[] = [
     {
@@ -124,7 +128,7 @@ const AdvocatesSearch = () => {
             />
           </div>
   
-          <div className="overflow-x-auto" style={{ minHeight: '800px' }}> {/* Set a minimum height */}
+          <div className="overflow-x-auto" style={{ minHeight: '800px' }}>
             <Table className="w-full">
               <Table.Header>
                 {table.getHeaderGroups().map((headerGroup) => (
