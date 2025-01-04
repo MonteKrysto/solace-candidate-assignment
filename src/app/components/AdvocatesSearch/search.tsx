@@ -11,6 +11,12 @@ import {
 import { DebounceInput, Table } from "@/app/components";
 import { useAdvocates } from "@/app/hooks/useAdvocates";
 
+/**
+ * Search for advocates
+ * 
+ * Provides a search input to filter advocates
+ * and paginated results
+ */
 const AdvocatesSearch = () => {
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
