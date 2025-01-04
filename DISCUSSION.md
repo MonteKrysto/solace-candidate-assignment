@@ -1,4 +1,5 @@
 ## Improvements Made
+* Added react-query and react-table for data fetching and table rendering
 * Utilized proper routing for the search page
 * Added a full-text search index to be able to perform full text searches using ilike across multiple columns
 * Added searching and pagination to the API and UI
