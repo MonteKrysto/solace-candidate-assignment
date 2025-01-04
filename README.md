@@ -4,6 +4,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+You can now run `make setup` to install dependencies, start the container, push the migration, and seed the database.
+
+## Deprecated but still functional
 Install dependencies
 
 ```bash
